@@ -1,0 +1,18 @@
+{
+  "name": "application-name",
+  "version": "0.0.1-5",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "*",
+    "socket.io": "*",
+    "redis": "*"
+  },
+  "subdomain": "kuiw-nodedemo",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
