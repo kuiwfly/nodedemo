@@ -1,17 +1,38 @@
-head Welcome to our circle.
-script(src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js') 
-
-//form(method='post', action='/')
+head 
+	h1(align="center") Welcome to our circle.
+	script(src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js') 
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+	meta(name="viewport",content="width=device-width, initial-scale=1.0")
+	title Custom Login Form Styling
+	meta(name="description",content="Custom Login Form Styling with CSS3")
+	meta(name="keywords",content="css3, login, form, custom, input, submit, button, html5, placeholder")
+	meta(name="author",content="Codrops" )	
+	link(rel="stylesheet",type="text/css",href="stylesheets/style.css")
+	script(src="javascript/modernizr.custom.63321.js")
+	style
+		body{
+				background: #e1c192 url(images/wood_pattern.jpg);
+			}
+		
 body
-	li
-		label E-Mail:
-		input(id='email',size=40)
-	li
-		label(id='password') Password:
-		input(size=30)
-		label Remember me
-		input(type='checkbox')
-	li
-		button(id='submit',type='button') Click
-script(src='/javascripts/login.js') 		
-	
+	section(class="main")
+		form(class="form-2")
+					h1
+						span(class="log-in") Log in 
+						span or
+						span(class="sign-up") sign up
+					p(class="float")
+						label(for="login")i(class="icon-user") Username
+						input(type="text",name="login",placeholder="Username or email",id="username")
+					p(class="float")
+						label(for="password")i(class="icon-lock") Password
+						input(type="password",name="password",placeholder="Password",class="showpassword",id="password")
+					p(class="clearfix")
+						input(type="checkbox",name="remember",id="remember")
+						label(for="remember") Remember me
+					p(class="clearfix")
+						a(href="#",class="log-twitter") Register  
+						input(type="submit",name="submit",value="Log in",id="submit")
+script(src='/socket.io/socket.io.js')						
+script(src='/javascripts/login.js')

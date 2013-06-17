@@ -20,6 +20,11 @@ socketio.sockets.on('connection', function(socket){
     	console.log("news:"+data) ;
     	}
     ) ;
+    socket.on('login',function(data_login){
+    		console.log("username:"+data_login.username) ;
+    		console.log("password:"+data_login.password) ;
+    	}
+    ) ;
 });
 /*
 socketio.sockets.on('connnection',function(socket){
