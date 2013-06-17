@@ -10,7 +10,7 @@ var express = require('express')
   , path = require('path');
 var redis = require('redis') ;
 //var client = redis.createClient(6379,'nodejitsudb3221588570.redis.irstack.com:6379') ;
-var client = redis.createClient() ;
+//var client = redis.createClient() ;
 var app = express();
 
 // all environments

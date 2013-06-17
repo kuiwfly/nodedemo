@@ -1,5 +1,17 @@
-extends layout
+head Welcome to our circle.
+script(src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js') 
 
-block content
-  h1= title
-  p Welcome to #{title}
+//form(method='post', action='/')
+body
+	li
+		label E-Mail:
+		input(id='email',size=40)
+	li
+		label(id='password') Password:
+		input(size=30)
+		label Remember me
+		input(type='checkbox')
+	li
+		button(id='submit',type='button') Click
+script(src='/javascripts/login.js') 		
+	

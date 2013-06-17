@@ -4,6 +4,6 @@
  */
 
 exports.index = function(req, res){
-  //res.render('index', { title: 'Express' });
-	res.sendfile('./public/index.html')
+  res.render('index', { title: 'Express' });
+	//res.sendfile('./public/index.html')
 };
