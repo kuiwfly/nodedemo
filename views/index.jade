@@ -14,7 +14,8 @@ head
 		body{
 				background: #e1c192 url(images/wood_pattern.jpg);
 			}
-		
+script(src='/socket.io/socket.io.js')
+script(src="/javascripts/login.js")			
 body
 	section(class="main")
 		form(class="form-2")
@@ -34,5 +35,3 @@ body
 					p(class="clearfix")
 						a(href="#",class="log-twitter") Register  
 						input(type="submit",name="submit",value="Log in",id="submit")
-script(src='/socket.io/socket.io.js')						
-script(src='/javascripts/login.js')
